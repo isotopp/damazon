@@ -1,2 +1,5 @@
 *~
-
+.Python
+bin/
+include/
+lib/
