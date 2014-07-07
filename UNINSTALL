@@ -1,0 +1,10 @@
+#! /bin/bash --
+
+cd src || exit 1
+
+[ -L .Python ] && rm .Python
+for i in bin include lib
+do
+  [ -d $i ] && rm -rf $i
+done
+echo 'Cleaned up src/.'

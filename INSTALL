@@ -1,0 +1,9 @@
+#! /bin/bash -- 
+
+cd src || exit 1
+
+virtualenv $(pwd)
+bin/pip install requests
+bin/pip install beautifulsoup4
+
+echo 'To run, cd into src/ and call bin/python damazon.py.'
